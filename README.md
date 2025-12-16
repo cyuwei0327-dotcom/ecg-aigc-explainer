@@ -19,15 +19,20 @@ from structured ECG analysis results using **conditional text generation**.
 - Fallback generation when API quota is unavailable
 
 ## Project Structure
+
+```
 ecg-aigc-explainer/
-├─ app.py
-├─ prompts.py
-├─ llm.py
-├─ requirements.txt
-├─ README.md
-└─ .gitignore
+├─ app.py              # Streamlit UI
+├─ prompts.py          # Conditional prompt builder
+├─ llm.py              # LLM API wrapper / fallback
+├─ requirements.txt    # Dependencies
+└─ README.md           # Project documentation
+
+```
+
 
 ## How to Run
 ```bash
 pip install -r requirements.txt
+
 streamlit run app.py
